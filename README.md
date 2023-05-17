@@ -11,9 +11,11 @@ The project consists of the following classes:
 - **SnakePlacement:** A derived class from Grid. It manages the placement and movement of the snake on the grid. It handles snake body growth, collision detection, and score tracking.
 - **SnakeHead:** It Handles collision with food and rais event of incresmental score.
 
-- **FoodPlacement:** A derived class from Grid. It manages the placement of food on the grid. It ensures the food spawns in unoccupied cells and handles the scoring when the snake consumes the food.
+- **FoodPlacement:** A derived class from Grid. It manages the placement of food on the grid. It ensures the food spawns in unoccupied cells and handles the scoring when the snake consumes the food. Spawn foods Color and points are fetch randomly from foodData.json everytime when food spawn.
 - **Streak:** A Streak class handles : If you eat food of the same color as the previous one, that food’s score will be multiplied by the current streak of “colliding with the same color”. and The streak resets when you eat a food of a different color than the previous one.
 - **FoodParser:** A FoodParser class, read foodData.json file and conver it into object for further use.
+- **GameOver:** A GameOver class listen event of game over and show game over popup. And it has OK button on Clicking OK it will redirect to the StartScene.
+- **SceneLoader:** A SceneLoader class switch one scene to another scene.
 
 ## Features
 
