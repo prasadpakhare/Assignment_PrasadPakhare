@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa10f3e82b5089489fd3a1b443a4b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  occupiedCells: []
 --- !u!4 &93487606
 Transform:
   m_ObjectHideFlags: 0

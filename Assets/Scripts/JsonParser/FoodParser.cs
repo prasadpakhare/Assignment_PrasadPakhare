@@ -24,7 +24,7 @@ namespace JsonParser
             jsonString = SaveToString(food);
             File.WriteAllText(fileName, jsonString);
 #else
-            Debug.Log(textAsset.text);
+            // Debug.Log(textAsset.text);
             food = CreateFromJson(textAsset.text);
 #endif
         }

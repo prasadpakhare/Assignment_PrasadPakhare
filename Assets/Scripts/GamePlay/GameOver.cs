@@ -33,6 +33,7 @@ namespace GamePlay
                 PlayerPrefs.Save();
             }
 
+            GameManager.Instance().occupiedCells.Clear();
             // Enable Game over popup
             gameOverPopup.SetActive(true);
             currentScore.text = Constants.CurrentScore.ToString();

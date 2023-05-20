@@ -5,6 +5,7 @@ using Core;
 using GamePlay;
 using TMPro;
 using UnityEngine;
+using Grid = GamePlay.Grid;
 
 public class Streak : Grid
 {
@@ -52,20 +53,18 @@ public class Streak : Grid
             Constants.CurrentScore = _score;
         }
 
-        // StartCoroutine(WaitAndDestroy());
+        //StartCoroutine(WaitAndDestroy());
     }
 
     private IEnumerator WaitAndDestroy()
     {
         //one cell above the snake head
         Debug.Log("Particle Spawn");
-        Vector2Int headPosition = OccupiedCells[1];
+        Vector2Int headPosition = GameManager.Instance().occupiedCells[0];
         Vector3 particlePosition = CellToWorldPosition(new Vector2Int(headPosition.x, headPosition.y + 1));
         var streakParticle = Instantiate(particle, particlePosition, Quaternion.identity);
         yield return new WaitForSeconds(2);
         Destroy(streakParticle, 2);
     }
-
-    //to do
-    // streak particle with rigidbody and sign wave
+    
 }

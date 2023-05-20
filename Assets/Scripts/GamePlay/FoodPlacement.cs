@@ -45,21 +45,9 @@ namespace GamePlay
                 foodObject.GetComponent<Renderer>().material.color = FoodParser.Instance().food.foodData[randomNumber].color;
             
                 Constants.currentColor = (Colors)randomNumber;
-                Debug.Log($"Spawn food color is {Constants.currentColor}");
+                // Debug.Log($"Spawn food color is {Constants.currentColor}");
             }
         }
-        private Vector2Int GetRandomUnoccupiedPosition()
-        {
-            // generatte  random position within the grid boundaries
-            Vector2Int randomPosition = new Vector2Int(Random.Range(0, GridSizeX), Random.Range(0, GridSizeY));
-            
-            while (OccupiedCells.Contains(randomPosition))
-            {
-                // get new random position
-                randomPosition = new Vector2Int(Random.Range(0, GridSizeX), Random.Range(0, GridSizeY));
-            }
-
-            return randomPosition;
-        }
+        
     }
 }

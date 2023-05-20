@@ -878,7 +878,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridCellPrefab: {fileID: 0}
-  _occupiedCells: []
   particle: {fileID: 9128296182396378995, guid: 1c7d4da9b4b9b5849a5e9a344fcc4c01, type: 3}
   scoreText: {fileID: 965392514}
   streakText: {fileID: 687150046}
@@ -973,7 +972,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridCellPrefab: {fileID: 0}
-  _occupiedCells: []
   foodPrefab: {fileID: 7577126515797023004, guid: 07d9a543458624447b23f9741b5b2a68, type: 3}
 --- !u!1 &909588440
 GameObject:
@@ -2260,7 +2258,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridCellPrefab: {fileID: 3534098212121158868, guid: 3dbb31e7b43496b46b3ef537b1347bb4, type: 3}
-  _occupiedCells: []
   snakeLength: 2
   snakePrefab: {fileID: 5455972890069640174, guid: 4e6ef8f2a89e4a14fa79dfd48c6d680e, type: 3}
   movementSpeed: 0.4
